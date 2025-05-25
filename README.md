@@ -5,17 +5,17 @@ A Spring Boot backend for managing library operations with user registration, bo
 
 ## Features
 
-- 📚 **Book Management**
+- **Book Management**
   - Add new books to inventory (`POST /api/addbook`)
   - View all available books (`GET /api/books`)
   
-- 👥 **User System**
+- **User System**
   - Register new members (`POST /api/register`)
     - Passwords stored securely using BCrypt hashing
   - User login validation (`POST /api/login`)
     - Verifies credentials against hashed passwords
 
-- 🔄 **Borrowing System**
+- **Borrowing System**
   - Borrow books (`POST /api/borrow`)
   - Return books with auto-fine calculation (`PATCH /api/return`)
     - Fines: ₹10/day after 14-day borrowing period
